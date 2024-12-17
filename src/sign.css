@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+    font-family: outfit;
+}
+
+.login-header {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(12deg, rgba(0, 0, 0, 0.7500) 36.00%, rgba(0, 0, 0, 0.7465) 40.58%, rgba(0, 0, 0, 0.7361) 45.17%, rgba(0, 0, 0, 0.7187) 49.75%, rgba(0, 0, 0, 0.6944) 54.33%, rgba(0, 0, 0, 0.6632) 58.92%, rgba(0, 0, 0, 0.6250) 63.50%, rgba(0, 0, 0, 0.5868) 68.08%, rgba(0, 0, 0, 0.6556) 72.67%, rgba(0, 0, 0, 0.5313) 77.25%, rgba(0, 0, 0, 0.5139) 81.83%, rgba(0, 0, 0, 0.5035) 86.42%, rgba(0, 0, 0, 0.5000) 91.00%), url(../public/Images/Net\ background.jpg);
+    /* background-color: black; */
+    color: white;
+
+}
+
+.login-header img {
+    width: 180px;
+    height: 80px;
+    left: 90px;
+    top: 30px;
+    position: absolute;
+}
+
+.login-border {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: fit-content;
+    width: fit-content;
+    margin-top: 80px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    backdrop-filter: blur(2px);
+    position: relative;
+    /* display: inline-block; */
+}
+
+.login-border form {
+    margin: 20px 30px;
+    padding: 10px;
+}
+
+.login-border li {
+    list-style: none;
+}
+
+.login-border h1 {
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.login-input {
+    width: 314px;
+    height: 40px;
+    padding: 6px 10px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    border: 0;
+    border: solid rgb(192, 192, 192) 1.5px;
+    background-color: transparent;
+    color: white;
+    backdrop-filter: blur(2px);
+    font-weight: 500;
+}
+
+.login-border .btn-1 {
+    width: 336px;
+    height: 36px;
+    padding: 10px;
+    border: 0;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.login-border .or {
+    margin-left: 48%;
+    font-size: 14px;
+    color: rgb(148, 148, 148);
+}
+
+.login-border .btn-2 {
+    width: 336px;
+    height: 36px;
+    padding: 10px;
+    border: 0;
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.forgot {
+    margin-left: 34%;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.remember {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#rem-box {
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    border: solid rgb(148, 148, 148) 1.5px;
+    border-radius: 0;
+    color: white;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 9px;
+}
+
+#rem-box:checked {
+    background-color: transparent;
+}
+
+#rem-box:checked::after {
+    content: '';
+    display: block;
+    width: 7.5px;
+    height: 7.5px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    top: 2.5px;
+}
+
+.login-border h4 {
+    font-size: 18px;
+    font-weight: 300;
+    color: grey;
+    margin-top: 20px;
+}
+
+.sign-up {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.sign-up:hover {
+    text-decoration: underline;
+}
+
+.login-border .learn {
+    color: rgb(134, 134, 134);
+    font-size: 13px;
+    font-weight: 200;
+    display: block;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.learn-more {
+    font-weight: 300;
+    font-size: 12px;
+    color: rgb(0, 68, 255);
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+/* sign about */
+
+.sign-about h4 {
+    margin-top: 18%;
+    margin-left: 13%;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+}
+
+.sign-about .call-link {
+    font-size: 15px;
+    color: rgb(143, 143, 143);
+    font-weight: 400;
+}
+
+.sign-list {
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.sign-list li {
+    list-style: none;
+    box-sizing: border-box;
+    flex-basis: 25%;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 13px;
+}
+
+.sign-list .sign-link {
+    color: rgb(143, 143, 143);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.sign-about-btn {
+    border: 0;
+    border-radius: 8px;
+    border: solid rgb(124, 124, 124) 1.9px;
+    width: 120px;
+    height: 45px;
+    padding: 12px;
+    margin-left: 13%;
+    margin-top: 20px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(2px);
+    font-size: 15px;
+    margin-bottom: 10%;
+}
+
+.sign-about-btn:focus {
+    color: grey;
+}
+
+/* Media screen */
+
+@media (max-width:599px) {
+    .login-header {
+        background-image: none;
+        align-items: start;
+        justify-content: start;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 20%;
+    }
+
+    .login-header img {
+        width: 110px;
+        height: 50px;
+        left: 20px;
+        top: 20px;
+    }
+
+    .login-border {
+        backdrop-filter: none;
+        margin-top: 60px;
+        background-color: none;
+        padding: 0;
+    }
+
+    .login-border form {
+        margin: 10px 20px;
+    }
+
+    .login-border h1 {
+        font-weight: 700;
+        margin-top: 10px;
+        font-size: 28px;
+    }
+
+    .login-border .login-input {
+        width: 96%;
+        height: 38px;
+        padding: 7px;
+        backdrop-filter: none;
+        border: solid rgb(192, 192, 192) 1.5px;
+        border-radius: 7px;
+        margin: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        max-width: 599px;
+    }
+
+    .login-input::placeholder {
+        font-size: 17px;
+        color: rgb(151, 151, 151);
+        padding: 7px;
+    }
+    .login-input:focus{
+        /* border: solid rgb(192, 192, 192) 2px; */
+        outline: none;
+    }
+
+    .login-border .btn-1 {
+        width: 98.5%;
+        height: 43px;
+        margin: 13px;
+        font-size: 17px;
+        cursor: pointer;
+        max-width: 599px;
+    }
+
+    .login-border .btn-2 {
+        width: 98.5%;
+        height: 43px;
+        margin: 13px;
+        font-size: 17px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 22px;
+        max-width: 599px;
+    }
+
+    .login-border .or {
+        font-size: 15px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        margin-left: 50%;
+        font-weight: 600;
+    }
+
+    .forgot {
+        margin-left: 40%;
+    }
+
+    .remember {
+        margin-left: 17px;
+        margin-top: 20px;
+    }
+
+    .login-border h4 {
+        font-size: 16px;
+        margin-top: 25px;
+        margin-left: 14px;
+        color: rgb(155, 155, 155);
+        font-weight: 600;
+    }
+
+    .login-border .learn {
+        margin-left: 14px;
+        color: rgb(155, 155, 155);
+        display: block;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .sign-color {
+        border-top: 3px solid rgb(78, 78, 78);
+        max-width: 599px;
+
+    }
+    .sign-about{
+        width: 100%;
+        height: 50vh;
+    }
+    .sign-about .call-link{
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .sign-about h4 {
+        color: rgb(192, 192, 192);
+        margin: 40px;
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .sign-list {
+        max-width: 599px;
+        margin-left: 19px;
+    }
+
+    .sign-list li {
+        flex-basis: 40%;
+        margin-left: 18px;
+    }
+
+    .sign-list .sign-link {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .sign-about-btn {
+        margin-left: 10%;
+        margin-top: 7%;
+        backdrop-filter: none;
+        margin-bottom: 30px;
+        width: 105px;
+        border-radius: 3px;
+        height: 35px;
+        padding: 7px;
+    }
+
+}
+
+@media (min-width:600px)and (max-width:963px) {
+    .login-header {
+        align-items: start;
+        justify-content: start;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        margin-bottom: 20%;
+    }
+    .login-header img {
+        top: 0;
+        left: 0;
+        margin: 10px;
+        width: 110px;
+        height: 50px;
+    }
+
+    .login-border {
+        margin-top: 110px;
+        backdrop-filter: none;
+    }
+    .login-border form {
+        margin: 10px 20px;
+    }
+    .login-input{
+        backdrop-filter: none;
+    }
+    .login-input::placeholder{
+        font-size: 15px;
+        color: rgb(180, 180, 180);
+    }
+    .login-input:focus{
+        border: solid rgb(192, 192, 192) 1.5px;
+        outline: none;
+    }
+    .sign-about h4{
+        font-size: 16px;
+        color: rgb(143, 143, 143);
+        margin-left: 7%;
+        margin-top: 8%;
+    }
+    .sign-about .call-link{
+        font-size: 14.5px;
+        text-decoration: none;
+    }
+    .sign-list{
+        max-width: 963px;
+        margin-left: 7%;
+        position: relative;
+    }
+    .sign-list li{
+        flex-basis: 40%;
+    }
+    .sign-list .sign-link{
+        font-size: 14.5px;
+    }
+    .sign-about-btn{
+        backdrop-filter: none;
+        margin-left: 7.5%;
+    }
+
+}
+@media (min-width:964px)and (max-width:1366px){
+    .login-header {
+        align-items: start;
+        justify-content: start;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        margin-bottom: 20%;
+    }
+    .login-header img{
+        position: relative;
+        top: 5%;
+        left: -35%;
+    }
+    .login-border {
+        margin-top: 40px;
+        backdrop-filter: none;
+    }
+    .login-input:focus{
+        border: solid rgb(192, 192, 192) 1.5px;
+        outline: none;
+    }
+    .sign-about h4{
+        font-size: 16px;
+        color: rgb(143, 143, 143);
+        margin-left: 10%;
+        margin-top: 8%;
+    }
+    .sign-about .call-link{
+        font-size: 14.5px;
+        text-decoration: none;
+    }
+    .sign-list{
+        max-width: 1366px;
+        margin-left: 10%;
+        position: relative;
+    }
+    .sign-list li{
+        flex-basis: 22%;
+    }
+    .sign-list .sign-link{
+        font-size: 14.5px;
+    }
+    .sign-about-btn{
+        backdrop-filter: none;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+}
